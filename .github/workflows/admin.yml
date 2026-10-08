@@ -1,15 +1,15 @@
 name: Admin CI-CD Pipeline   
 
 on:
- # push:
-   # branches:
-    #  - 
+ push:
+   branches:
+     - main
 
   workflow_dispatch:
 
 env:
   PYTHON_VERSION: "3.13.1"
-  AZURE_WEBAPP_NAME: "Adminwebapp"
+  AZURE_WEBAPP_NAME: "vida-admin"
 
 jobs:
   build:
